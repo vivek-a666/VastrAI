@@ -1,0 +1,34 @@
+.loading-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  animation: pulse 1s ease-in-out alternate infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.grid-item {
+  width: 20px;
+  height: 20px;
+  background-color: var(--tertiary); /* Dark gray for accessibility */
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: pulse 1s ease-in-out alternate infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
